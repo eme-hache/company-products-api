@@ -1,5 +1,6 @@
 .env*
 !.env.template
+build
 
 # Logs
 logs
