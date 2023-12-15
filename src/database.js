@@ -9,7 +9,12 @@ if (process.env.ENV === 'production') {
 }
 
 console.log(process.env.ENV)
+console.log(connectionString)
 
 mongoose.connect(connectionString)
     .then(db => console.log('DB connected'))
-    .catch(err => console.log(err))
+    .catch(err => {
+        console.log("error")
+
+        console.log(err)
+    })
