@@ -1,27 +1,22 @@
 {
 	"info": {
-		"_postman_id": "a5d787be-285a-4fd8-8189-65a383538ce1",
+		"_postman_id": "7467a095-377a-4781-bced-71b905dfd94b",
 		"name": "API Company Products",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13247152"
 	},
 	"item": [
 		{
 			"name": "products",
 			"item": [
 				{
-					"name": "/api//products",
+					"name": "/products",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "default"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": ""
@@ -42,25 +37,19 @@
 					"response": []
 				},
 				{
-					"name": "/api/products/:productId",
+					"name": "/products/:productId",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "default"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/products/6274697b3ad45b07b8da3015",
+							"raw": "http://localhost:3000/api/products/657ba1f5c6015c16aaac5338",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -69,26 +58,30 @@
 							"path": [
 								"api",
 								"products",
-								"6274697b3ad45b07b8da3015"
+								"657ba1f5c6015c16aaac5338"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "/api//products",
+					"name": "/products",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2I5ZWEwZmYwNTJlNGIwOTI3ZjQxZSIsImlhdCI6MTcwMjYwMDg5NywiZXhwIjoxNzAyNjg3Mjk3fQ.E-zI-05E4nGvrGQ_jIBv7M3VrKyAsf1BlT3UOkJCitc",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "default"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Laptop HP\",\n    \"price\": 999.99,\n    \"category\": \"laptop\",\n    \"imgURL\": \"https://d22k5h68hofcrd.cloudfront.net/catalog/product/2/2/22A98LA-6_T1642534325.png\"\n}",
+							"raw": "{\n    \"name\": \"Laptop Mac\",\n    \"price\": 1999.99,\n    \"category\": \"laptop\",\n    \"imgURL\": \"https://d22k5h68hofcrd.cloudfront.net/catalog/product/2/2/22A98LA-6_T1642534325.png\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -111,16 +104,20 @@
 					"response": []
 				},
 				{
-					"name": "/api/products/:productId",
+					"name": "/products/:productId",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2I5ZWEwZmYwNTJlNGIwOTI3ZjQxZSIsImlhdCI6MTcwMjYwMDg5NywiZXhwIjoxNzAyNjg3Mjk3fQ.E-zI-05E4nGvrGQ_jIBv7M3VrKyAsf1BlT3UOkJCitc",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "default"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"category\" : \"laptops\",\n    \"name\": \"Laptop Lenovo Thinkpad\"\n}",
@@ -131,7 +128,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/products/6274697b3ad45b07b8da3015",
+							"raw": "http://localhost:3000/api/products/657ba1f5c6015c16aaac5338",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -140,26 +137,30 @@
 							"path": [
 								"api",
 								"products",
-								"6274697b3ad45b07b8da3015"
+								"657ba1f5c6015c16aaac5338"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "/api//products/:productId",
+					"name": "/products/:productId",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2I5ZWEwZmYwNTJlNGIwOTI3ZjQxZSIsImlhdCI6MTcwMjYwMDg5NywiZXhwIjoxNzAyNjg3Mjk3fQ.E-zI-05E4nGvrGQ_jIBv7M3VrKyAsf1BlT3UOkJCitc",
+									"type": "string"
+								}
+							]
+						},
 						"method": "DELETE",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "default"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Laptop HP\",\n    \"price\": 999.99,\n    \"category\": \"laptop\",\n    \"imgURL\": \"https://d22k5h68hofcrd.cloudfront.net/catalog/product/2/2/22A98LA-6_T1642534325.png\"\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -167,7 +168,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/products/6274697b3ad45b07b8da3015",
+							"raw": "http://localhost:3000/api/products/657ba11b0b16d146a27d59e9",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -176,7 +177,7 @@
 							"path": [
 								"api",
 								"products",
-								"6274697b3ad45b07b8da3015"
+								"657ba11b0b16d146a27d59e9"
 							]
 						}
 					},
@@ -186,16 +187,170 @@
 		},
 		{
 			"name": "users",
-			"item": []
+			"item": [
+				{
+					"name": "/users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2I5ZWEwZmYwNTJlNGIwOTI3ZjQxZSIsImlhdCI6MTcwMjYwMjI5OSwiZXhwIjoxNzAyNjg4Njk5fQ.6_CbU5mSaBy2L-K1fJ3_Qh-7XCPe64xEdh2wUMBFHRk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/:userId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2I5ZWEwZmYwNTJlNGIwOTI3ZjQxZSIsImlhdCI6MTcwMjYwNTEzNSwiZXhwIjoxNzAyNjkxNTM1fQ.9mTAJDjayWOUYAAHnYo7wlJBUELY07mUu-oBe9TcqG8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/657b9ea0ff052e4b0927f41e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"657b9ea0ff052e4b0927f41e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/:userId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2I5ZWEwZmYwNTJlNGIwOTI3ZjQxZSIsImlhdCI6MTcwMjYwNTEzNSwiZXhwIjoxNzAyNjkxNTM1fQ.9mTAJDjayWOUYAAHnYo7wlJBUELY07mUu-oBe9TcqG8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"Luis\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/users/657b9ea0ff052e4b0927f41e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"657b9ea0ff052e4b0927f41e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/:userId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1N2I5ZWEwZmYwNTJlNGIwOTI3ZjQxZSIsImlhdCI6MTcwMjYwNTEzNSwiZXhwIjoxNzAyNjkxNTM1fQ.9mTAJDjayWOUYAAHnYo7wlJBUELY07mUu-oBe9TcqG8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/users/657b9ea0ff052e4b0927f41e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users",
+								"657b9ea0ff052e4b0927f41e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "auth",
 			"item": [
 				{
-					"name": "/api/signin",
+					"name": "/signin",
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"luisalfonsodsg@outlook.com\",\r\n    \"password\": \"abc123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "http://localhost:3000/api/auth/signin",
 							"protocol": "http",
@@ -213,10 +368,19 @@
 					"response": []
 				},
 				{
-					"name": "/api/signup",
+					"name": "/signup",
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"Eme Hache\",\r\n    \"email\": \"luisalfonsodsg@outlook.com\",\r\n    \"password\": \"abc123\",\r\n    \"roles\": [\"admin\", \"moderator\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "http://localhost:3000/api/auth/signup",
 							"protocol": "http",
