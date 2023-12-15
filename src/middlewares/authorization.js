@@ -5,11 +5,11 @@ import config from '../config'
 
 export const verifyToken = async (req, res, next) => {
     try {
-        const token = req.headers['x-access-token']
+        const token = req.headers['authorization']
 
         if (!token) return res.status(403).json({ message: 'No token provided' })
 
-        const decoded = jwt.verify(token, config.SECRET)
+        const decoded = jwt.verify(token.split(' ')[1], config.SECRET)
         req.userId = decoded.id
 
         const user = await User.findById(decoded.id, { password: 0 })
