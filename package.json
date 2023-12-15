@@ -1,5 +1,5 @@
 {
-  "name": "products-api-company",
+  "name": "company-products-api",
   "version": "1.0.0",
   "description": "API REST with JWT",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "start": "node build/index.js",
     "build": "babel src --out-dir build"
   },
-  "author": "Eme Hache DEV",
+  "author": "Eme Hache",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
